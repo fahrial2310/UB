@@ -7,7 +7,7 @@
     <a href="https://github.com/fahrial2310/UB/issues"> <img src="https://img.shields.io/github/issues/noob-kittu/YoneRobot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/fahrial2310/UB/network/members"> <img src="https://img.shields.io/github/forks/noob-kittu/YoneRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://t.me/Alvin_UserBot"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a>
+    <a href="https://t.me/Alvin_UserBot"><img src="https://img.shields.io/badge/User%20Bot-blue.svg?style=for-the-badge&logo=Telegram"></a>
 </p>
 
 <p align="center">
