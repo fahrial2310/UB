@@ -41,15 +41,15 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 CUSTOM_TEXT = str(
     PMPERMIT_TEXT) if PMPERMIT_TEXT else f"__Halo kawan, saya bot yang menjaga room chat Rose-Userbot {DEFAULTUSER} di mohon jangan melakukan spam , kalau anda melakukan itu OTOMATIS saya akan memblockir anda!__ \n"
 DEF_UNAPPROVED_MSG = (
-    "╔═════════════════════╗\n"
-    "   Ⓦ︎Ⓔ︎Ⓛ︎Ⓒ︎Ⓞ︎Ⓜ︎Ⓔ︎ Ⓟ︎Ⓔ︎Ⓢ︎Ⓐ︎Ⓝ︎    ”\n"
-    "╚═════════════════════╝\n"
-    "**TOLONG JANGAN MELAKUKAN SPAM CHAT KEPADA BOS SAYA** \n"
-    f"**KARENA SAYA AKAN OTOMATIS MEMBLOKIR KAMU, TUNGGU SAMPAI {DEFAULTUSER} MENERIMA PESAN KAMU** \n"
-    "╔═════════════════════╗\n"
-    "│○›ᑭᗴՏᗩᑎ OTOᗰᗩTIՏ           \n"
-    f"│○›ᗷY ᖇOՏᗴ-ᑌՏᗴᖇᗷOT           \n"
-    "╚═════════════════════╝")
+    "╔══════════╗╔════════╗\n"
+    "    Alvin-UserBot        Room-Chat    ”\n"
+    "╚══════════╝╚════════╝\n"
+    "━━━━━━━━━━━━━━━━━\n"
+    "__Hi there,i'm the keeper of this room chat and master still doesn't allow  you to place an order,wait until the master is back online and please don't spam, thank you. __\n"
+    "━━━━━━━━━━━━━━━━━\n"
+    "╔        『◈Auto Messages◈』       ╗\n"
+    f"╚     ◄By {DEFAULTUSER} ►     ╝\n"
+    "━━━━━━━━━━━━━━━━━")
 # =================================================================
 
 
@@ -211,7 +211,7 @@ async def notifon(non_event):
     await non_event.edit("`Notifikasi Dari Pesan Pribadi Tidak Disetujui, Tidak Lagi Dibisukan!`")
 
 
-@register(outgoing=True, pattern=r"^\.(?:setuju|ok)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:y|ok)\s?(.)?")
 async def approvepm(apprvpm):
     """For .ok command, give someone the permissions to PM you."""
     try:
@@ -260,7 +260,7 @@ async def approvepm(apprvpm):
         )
 
 
-@register(outgoing=True, pattern=r"^\.(?:tolak|nopm)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:nope|nopm)\s?(.)?")
 async def disapprovepm(disapprvpm):
     try:
         from userbot.modules.sql_helper.pm_permit_sql import dissprove
@@ -417,9 +417,9 @@ async def permitpm(event):
 
 CMD_HELP.update(
     {
-        "pmpermit": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.setuju | .ok`"
+        "pmpermit": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.y | .ok`"
         "\n↳ : Menerima pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.tolak | .nopm`"
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.nope | .nopm`"
         "\n↳ : Menolak pesan seseorang dengan cara balas pesannya atau tag dan juga untuk dilakukan di pm."
         "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: >`.block`"
         "\n↳ : Memblokir Orang Di PM."
